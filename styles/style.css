@@ -1,0 +1,126 @@
+
+:root {
+    font-family: 'Lato', sans-serif;
+}
+h1{
+    color: white;
+}
+h1::selection{
+    background: 0;
+}
+body{
+    background: #3366CC;
+}
+.nav-container{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.info-container{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    padding-bottom: 20px;
+}
+#closeSuccess, #closeLose{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 15px 20px ;
+    border-radius: 50%;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px black solid;
+}
+#closeSuccess:hover, #closeLose:hover{
+    transform: scale(1.1);
+}
+.success-finish{
+    background: #7ebc59;
+}
+.lose-finish{
+    display: none;
+    background: #e41749;
+}
+.success-finish{
+    display: none;
+}
+.success-finish, .lose-finish{
+    position: relative;
+    width: 750px;
+    border-radius: 4px;
+    z-index: 100;
+    text-align: center;
+    height: 300px;
+    place-items: center;
+
+}
+#finalScore{
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+}
+#reset{
+    border: 1px #fff solid;
+    padding: 10px 20px;
+    background: none;
+    outline: none;
+    transition: .3s;
+    cursor: pointer;
+    color: white;
+}
+#reset:hover{
+    transform: scale(1.1);
+}
+#success, #lose{
+    display: none;
+}
+.success-finish p, .lose-finish p{
+    max-width: 500px;
+    text-align-last: center;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+.snake-main {
+    display: grid;
+    place-items: center;
+}
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+/* Demo Purpose Only*/
+.demo {
+    font-family: 'Raleway', sans-serif;
+    color:#fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo a{
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+
+.info-container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    text-align-last: center;
+    height: auto;
+    background: black;
+    color: white;
+}
+.apple-container{
+    display: flex;
+    justify-content: center;
+}

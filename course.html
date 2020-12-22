@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">
+        ❅
+    </div>
+    <div class="snowflake">
+        ❅
+    </div>
+    <div class="snowflake">
+        ❆
+    </div>
+    <div class="snowflake">
+        ❄
+    </div>
+    <div class="snowflake">
+        ❅
+    </div>
+    <div class="snowflake">
+        ❆
+    </div>
+    <div class="snowflake">
+        ❄
+    </div>
+    <div class="snowflake">
+        ❅
+    </div>
+    <div class="snowflake">
+        ❆
+    </div>
+    <div class="snowflake">
+        ❄
+    </div>
+</div>
+<div class="snake-main">
+    <h1>Snake by Dimovski</h1>
+    <canvas id="snake" width="608" height="608"></canvas>
+</div>
+<div class="info-container">
+    <p class="info_title">Привет, ты попал в змейку от разработчика Димасика(Dimovski). Суть игры заключается в следующем:</p>
+    <p>У тебя есть 3 вида яблок:</p>
+    <div class="apple-container">
+        <div><img src="apple.png" alt=""></div>
+        <div><img src="goldapple.png" alt=""></div>
+        <div><img src="diamondapple.png" alt=""></div>
+    </div>
+    <p>Красное даёт <b>1 очко</b>, золотое <b>10 очков</b>, алмазное <b>100 очков</b></p>
+    <p>Конечно же, частота спавна этих яблок тоже разная, но она на захаркоженна, а выбирается случайно через алогоритм</p>
+    <p>Красное появляется каждую секунду, жёлтое от 15 секунд до минуты, алмазное от 30 секунд и до 5 минут.</p>
+    <p>Чтобы выиграть в этой игре, тебе надо набрать 3.000 очков. Когда ты выиграешь, <b>тебе откроется всплывающее окно и с кодом</b>, который тоже случайным образом будет выбираться из ранее заготовленных <b>и тебе надо будет его предоставить мне.</b></p>
+    <p><i>Приз: шоколдка :3</i> Победитель один!!! Я оповещу в истории своего <a style="color: white" href="https://www.instagram.com/dimovski__/">инстаграмма</a> о том, если будет первый победитель. </p>
+    <p>Желаю тебе удачи и крепких нервов :))</p>
+    <button id="startGame">Начать игру</button>
+</div>
+<div class="nav-container">
+    <div class="success-finish">
+        <div><p>Поздравляю! Ты прошёл игру и можешь написать мне, чтобы забрать приз. Связаться со мной ты можешь
+            кликнув на иконки соц.сетей или мессенджеров ниже.</p></div>
+        <div>
+            <button id="closeSuccess">&times;</button>
+        </div>
+    </div>
+    <div class="lose-finish">
+        <div>
+            <p>Ну ничего, страшного, тяу-тяу-тяу-тяу!</p>
+        </div>
+        <div><p>Твой счёт: </p><span id="finalScore"></span></div>
+        <div>
+            <button id="closeLose">&times;</button>
+        </div>
+        <div>
+            <button id="reset">Начать заново</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="game.js">
+</script>
+</html>
