@@ -20,11 +20,8 @@ let loseFinishGame = () => {
 }
 let resetGame = () =>{
     location.reload()
+
 }
-let startGame = () =>{
-    info.style.display = 'none'
-}
-start.addEventListener("click", startGame)
 reset.addEventListener("click", resetGame)
 closeSuccess.addEventListener ( "click", close )
 
